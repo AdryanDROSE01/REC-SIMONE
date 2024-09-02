@@ -1,0 +1,90 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+
+:root {
+    --cor-de-fundo: #ff0404;
+    --branco: #ffffff;
+    --laranja: #000000;
+    --azul-degrade: linear-gradient(97.54deg, #ff0000 35.49%, #f30606 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #ffffff;
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #ca0000;
+    --cinza-claro: #d8d0d0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos móveis */
+    header .container {
+      flex-direction: column; /* Alinha os itens verticalmente */
+      align-items: center; /* Centraliza os itens */
+    }
+  
+    .lista-menu,
+    .opções {
+      flex-direction: column; /* Alinha os itens verticalmente */
+      width: 100%; /* Faz a lista ocupar toda a largura */
+    }
+  
+    .swiper {
+      width: 100%; /* Faz o carrossel ocupar toda a largura disponível */
+    }
+  
+    .swiper-slide {
+      width: 100%; /* Faz cada slide ocupar toda a largura */
+    }
+  
+    .carrossel__container {
+      padding: 0 10px; /* Adiciona um pouco de espaçamento lateral */
+    }
+  
+    .banner__pesquisa {
+      width: 90%; /* Aumenta a largura da barra de pesquisa */
+      margin: 0 auto; /* Centraliza a barra de pesquisa */
+    }
+  
+    .container__titulo {
+      font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+  
+    .card {
+      margin: 10px 0; /* Adiciona espaço entre os cards */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Ajustes para smartphones */
+    .container__titulo {
+      font-size: 20px; /* Reduz ainda mais o tamanho da fonte do título */
+    }
+  
+    .banner__titulo {
+      font-size: 24px; /* Ajusta o tamanho do título do banner */
+    }
+  
+    .banner__texto {
+      font-size: 16px; /* Ajusta o tamanho do texto do banner */
+    }
+  
+    .opções__item,
+    .tópicos__item {
+      font-size: 14px; /* Reduz o tamanho da fonte das opções e tópicos */
+    }
+  
+    .contato__email {
+      width: 80%; /* Aumenta a largura do campo de email */
+    }
+  }
